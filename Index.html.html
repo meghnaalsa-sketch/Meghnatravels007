@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio of Meghna S - Travel & Tourism student, music lover, yoga enthusiast, UPSC aspirant, travel agent.">
+<meta name="keywords" content="Meghna S, Portfolio, Travel, Tourism, UPSC, Yoga, Music, Travel Agent">
+<meta name="author" content="Meghna S">
+<title>Portfolio - Meghna S</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+* { margin:0; padding:0; box-sizing:border-box; scroll-behavior:smooth; }
+body { font-family:'Poppins',sans-serif; background:#121212; color:#fff; }
+h1,h2,h3{ font-weight:700; }
+a{ text-decoration:none; }
+img{ display:block; max-width:100%; border-radius:12px; }
+
+header{ background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc2NzF8MHwxfHNlYXJjaHwxfHx0cmF2ZWx8ZW58MHx8fHwxNjg5MzU0NDA2&ixlib=rb-4.0.3&q=80&w=1600') center/cover no-repeat; text-align:center; padding:6rem 1rem; color:#ff4b5c; }
+header h1{ font-size:3rem; margin-bottom:0.5rem; }
+header p{ font-size:1.3rem; opacity:0.9; }
+
+/* Navigation */
+nav{ background:#1f1f1f; position:sticky; top:0; z-index:1000; display:flex; justify-content:center; }
+nav a{ color:#ff4b5c; padding:1rem 1.5rem; display:block; transition:0.3s; }
+nav a:hover{ background:#2c2c2c; }
+
+/* Sections */
+section{ padding:4rem 10%; }
+section h2{ text-align:center; margin-bottom:2rem; font-size:2rem; color:#ff4b5c; position:relative; }
+section h2::after{ content:""; display:block; width:80px; height:3px; background:#ff4b5c; margin:0.5rem auto 0; }
+
+/* About */
+.about{ text-align:center; }
+.about img{ max-width:180px; border-radius:50%; margin-bottom:1rem; border:3px solid #ff4b5c; }
+.about p{ max-width:700px; margin:0.5rem auto; font-size:1.1rem; line-height:1.7; }
+.about-gallery{ display:grid; grid-template-columns: repeat(auto-fit,minmax(150px,1fr)); gap:1rem; margin-top:2rem; }
+.about-gallery img{ border-radius:12px; transition: transform 0.3s; }
+.about-gallery img:hover{ transform: scale(1.05); }
+
+/* Projects */
+.projects{ display:grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap:1.5rem; }
+.project-card{ background:#1f1f1f; border-radius:12px; box-shadow:0 3px 10px rgba(255,75,92,0.2); overflow:hidden; transition: transform 0.3s; }
+.project-card:hover{ transform:translateY(-8px); }
+.project-card h3{ margin:1rem; color:#ff4b5c; }
+.project-card p{ margin:0 1rem 1rem; font-size:0.95rem; color:#ccc; }
+.project-card a{ display:inline-block; margin:0 1rem 1rem; color:#ff4b5c; font-weight:500; }
+
+/* Skills */
+.skills-list{ display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:1.5rem; text-align:center; }
+.skill{ background:#1f1f1f; padding:1rem; border-radius:12px; box-shadow:0 3px 10px rgba(255,75,92,0.2); }
+.skill i{ font-size:2rem; color:#ff4b5c; margin-bottom:0.5rem; }
+.progress-bar{ background:#333; border-radius:20px; height:12px; margin-top:0.5rem; overflow:hidden; }
+.progress{ background:#ff4b5c; height:100%; width:0; transition: width 1.5s ease-in-out; }
+
+/* Contact */
+form{ max-width:600px; margin:0 auto; display:flex; flex-direction:column; }
+form input, form textarea{ margin:0.5rem 0; padding:0.8rem; border:1px solid #555; border-radius:6px; background:#1f1f1f; color:#fff; font-size:1rem; }
+form input:focus, form textarea:focus{ border-color:#ff4b5c; outline:none; box-shadow:0 0 5px rgba(255,75,92,0.4); }
+form button{ padding:0.8rem; border:none; border-radius:6px; background:#ff4b5c; color:white; font-size:1rem; cursor:pointer; transition:0.3s; }
+form button:hover{ background:#e63b4a; }
+.social-links{text-align:center; margin-top:1.5rem; }
+.social-links a{ color:#ff4b5c; font-size:1.5rem; margin:0 10px; transition:color 0.3s; }
+.social-links a:hover{ color:#fff; }
+
+/* Footer */
+footer{ background:#1f1f1f; color:#fff; text-align:center; padding:1.2rem; margin-top:2rem; }
+footer a{ color:#ff4b5c; }
+
+/* Full-width image background sections */
+.bg-section{ position:relative; height:300px; margin:4rem 0; border-radius:12px; overflow:hidden; }
+.bg-section img{ width:100%; height:100%; object-fit:cover; filter:brightness(0.6); }
+.bg-section h2{ position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); color:#ff4b5c; font-size:2rem; text-shadow: 2px 2px 10px #000; }
+
+</style>
+</head>
+<body>
+
+<!-- Hero -->
+<header id="home">
+<h1>Meghna S</h1>
+<p>Travel & Tourism Student | Music & Yoga Enthusiast | UPSC Aspirant | Travel Agent</p>
+</header>
+
+<!-- Navigation -->
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<!-- About -->
+<section id="about" class="about">
+<h2>About Me</h2>
+<img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc2NzF8MHwxfHNlYXJjaHwxfHxwcm9maWxlJTIwcGljdHVyZXN8ZW58MHx8fHwxNjg5MzU0NzI5&ixlib=rb-4.0.3&q=80&w=400" alt="Profile picture of Meghna S">
+<p>Hello! I am <strong>Meghna S</strong>, a passionate <strong>Travel & Tourism student</strong> exploring culture and meaningful journeys worldwide.</p>
+<p>Music and yoga inspire me daily, while I work hard as a dedicated <strong>UPSC aspirant</strong> and a budding <strong>travel agent</strong>.</p>
+<div class="about-gallery">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=200" alt="Travel Image">
+<img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=200" alt="Yoga Image">
+<img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=200" alt="Music Image">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=200" alt="Nature Travel">
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=200" alt="City Travel">
+</div>
+</section>
+
+<!-- Full-width aesthetic sections -->
+<div class="bg-section"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1600" alt="Travel scenic"><h2>Explore the World</h2></div>
+<div class="bg-section"><img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1600" alt="Yoga scene"><h2>Balance with Yoga</h2></div>
+<div class="bg-section"><img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1600" alt="Music scene"><h2>Feel the Music</h2></div>
+
+<!-- Projects -->
+<section id="projects">
+<h2>Projects</h2>
+<div class="projects">
+<article class="project-card">
+<img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400" alt="Travel Planner Website">
+<h3>Travel Planner Website</h3>
+<p>Modern website to plan dream trips with itineraries and guides.</p>
+<a href="#">View Project</a>
+</article>
+<article class="project-card">
+<img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400" alt="Yoga Blog Project">
+<h3>Yoga Lifestyle Blog</h3>
+<p>Sharing yoga, meditation, and wellness tips online.</p>
+<a href="#">View Project</a>
+</article>
+<article class="project-card">
+<img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400" alt="Music Playlist App">
+<h3>Music Playlist App</h3>
+<p>Web app for creating and sharing playlists with friends.</p>
+<a href="#">View Project</a>
+</article>
+<article class="project-card">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400" alt="Travel Booking App">
+<h3>Travel Booking App</h3>
+<p>Easy booking platform for tours and vacations.</p>
+<a href="#">View Project</a>
+</article>
+</div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills-list">
+<div class="skill"><i class="fas fa-plane-departure"></i><h3>Travel Planning</h3><div class="progress-bar"><div class="progress" style="width:90%"></div></div></div>
+<div class="skill"><i class="fas fa-spa"></i><h3>Yoga & Wellness</h3><div class="progress-bar"><div class="progress" style="width:85%"></div></div></div>
+<div class="skill"><i class="fas fa-music"></i><h3>Music & Creativity</h3><div class="progress-bar"><div class="progress" style="width:80%"></div></div></div>
+<div class="skill"><i class="fas fa-book-reader"></i><h3>UPSC Preparation</h3><div class="progress-bar"><div class="progress" style="width:70%"></div></div></div>
+</div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+<h2>Contact Me</h2>
+<form>
+<input type="text" name="name" placeholder="Your Name" required aria-label="Name">
+<input type="email" name="email" placeholder="Your Email" required aria-label="Email">
+<textarea name="message" rows="5" placeholder="Your Message" required aria-label="Message"></textarea>
+<button type="submit">Send Message</button>
+</form>
+<div class="social-links">
+<a href="#"><i class="fab fa-linkedin"></i></a>
+<a href="#"><i class="fab fa-github"></i></a>
+<a href="#"><i class="fab fa-twitter"></i></a>
+</div>
+</section>
+
+<!-- Footer -->
+<footer>
+<p>&copy; 2025 Meghna S. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+</footer>
+
+<!-- Progress animation -->
+<script>
+const progressBars = document.querySelectorAll('.progress');
+const options={threshold:0.5};
+const animateProgress=(entry)=>{if(entry.isIntersecting){entry.target.style.width=entry.target.getAttribute('style').match(/width:\s*(\d+%)/)[1];}};
+const observer=new IntersectionObserver((entries)=>{entries.forEach(animateProgress);},options);
+progressBars.forEach(bar=>observer.observe(bar));
+</script>
+</body>
+</html>
