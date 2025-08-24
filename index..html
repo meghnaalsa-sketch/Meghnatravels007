@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meghna S - Portfolio</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #add8e6, #fffacd);
+      color: #333;
+    }
+    header {
+      background: #87ceeb;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    section {
+      padding: 50px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h1, h2, h3 {
+      color: #2e8b57;
+    }
+    .projects, .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .project, .testimonial {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .project img, .about img, .testimonial img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    form input, form textarea {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background: #fdd835;
+      color: #333;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #fbc02d;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Meghna S's Portfolio</h1>
+    <p>Travel & Tourism Student | Carnatic Music Enthusiast | Yoga Practitioner | UPSC Aspirant</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about">
+      <p>Hello! I am <strong>Meghna S</strong>, currently pursuing a Travel and Tourism course at SDNB Vaishnav College. I am deeply passionate about singing Carnatic music and practicing yoga, which bring harmony and creativity into my life. I also enjoy reading books, which fuels my curiosity and knowledge. I aspire to become a civil servant and am preparing for the UPSC exams with dedication and enthusiasm.</p>
+      <img src="https://cdn.pixabay.com/photo/2017/03/02/09/07/yoga-2112224_1280.jpg" alt="Yoga" />
+      <img src="https://cdn.pixabay.com/photo/2016/11/29/03/53/india-1868669_1280.jpg" alt="Carnatic Music" />
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Interests & Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <img src="https://cdn.pixabay.com/photo/2016/11/29/09/08/holiday-1867271_1280.jpg" alt="Travel" />
+        <h3>Exploring Tourism</h3>
+        <p>As part of my travel and tourism course, I have explored various aspects of hospitality, cultural heritage, and sustainable tourism.</p>
+      </div>
+      <div class="project">
+        <img src="https://cdn.pixabay.com/photo/2017/01/20/00/30/girl-1990347_1280.jpg" alt="Books" />
+        <h3>Love for Reading</h3>
+        <p>Books inspire me to learn continuously and expand my horizons across literature, history, and current affairs.</p>
+      </div>
+      <div class="project">
+        <img src="https://cdn.pixabay.com/photo/2017/07/31/11/21/india-2558676_1280.jpg" alt="Carnatic Music" />
+        <h3>Carnatic Singing</h3>
+        <p>Performing Carnatic music has strengthened my discipline, creativity, and deep cultural connection.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <p>“Meghna’s passion for Carnatic music is inspiring. Her voice carries depth and dedication.”</p>
+        <h4>- Music Mentor</h4>
+      </div>
+      <div class="testimonial">
+        <p>“Her positive energy in yoga practice motivates everyone around her to stay mindful and healthy.”</p>
+        <h4>- Yoga Instructor</h4>
+      </div>
+      <div class="testimonial">
+        <p>“Meghna’s commitment to her UPSC preparation shows her determination and vision for the future.”</p>
+        <h4>- Peer</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="text" placeholder="Subject" />
+      <textarea placeholder="Message" rows="5"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+</body>
+</html>
